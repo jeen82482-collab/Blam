@@ -1,4 +1,89 @@
-<!doctype html>
+<!doctype html><!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pimmuki Shop - Green Yellow Theme</title>
+    <!-- นำเข้า Tailwind CSS สำหรับจัดแต่งหน้าเว็บ -->
+    <script src="https://tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <style>
+        /* กำหนดพื้นหลังหลักเป็นสีเหลืองครีมพาสเทล */
+        body { background-color: #fcfbf2; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        /* กล่องเนื้อหาดีไซน์มนสไตล์มินิมอล */
+        .aesthetic-card { background: rgba(255, 255, 255, 0.85); border-radius: 24px; border: 1px solid #e1e6cc; }
+    </style>
+</head>
+<body class="flex justify-center items-center min-h-screen p-4">
+
+    <!-- กรอบจำลองหน้าจอมือถือ -->
+    <div class="w-full max-w-md bg-[#f7f9ed] rounded-[40px] shadow-2xl overflow-hidden border-8 border-white relative flex flex-col h-[840px]">
+        
+        <!-- ส่วนหัวและแบนเนอร์ (ปรับภาพให้เข้ากับโทนเขียวธรรมชาติ) -->
+        <div class="relative h-48 bg-cover bg-center" style="background-image: url('https://unsplash.com');">
+            <div class="absolute inset-0 bg-black/5"></div>
+            <!-- ปุ่มหัวใจมุมบนขวา -->
+            <button class="absolute top-4 right-4 bg-white/80 p-2 rounded-full shadow-sm text-[#7a8a46] hover:text-red-400 transition">
+                <i class="fa-regular fa-heart text-lg"></i>
+            </button>
+        </div>
+
+        <!-- รูปโปรไฟล์ -->
+        <div class="absolute top-36 left-1/2 transform -translate-x-1/2">
+            <div class="w-24 h-24 rounded-full border-4 border-[#f7f9ed] overflow-hidden shadow-md bg-white">
+                <img src="https://unsplash.com" alt="Profile" class="w-full h-full object-cover">
+            </div>
+        </div>
+
+        <!-- เนื้อหาหลัก -->
+        <div class="flex-1 px-6 pt-16 pb-24 overflow-y-auto text-center text-[#55612d]">
+            
+            <!-- ชื่อร้านและรายละเอียด -->
+            <h1 class="text-2xl font-semibold mt-2 tracking-wide"> Blam harhonghok </h1>
+            <p class="text-sm mt-1 text-[#8b995d]"> Welcome to Blam harhonghok </p>
+
+            <!-- สถิติ (Followers / Reviews) -->
+            <div class="flex justify-center space-x-12 my-6">
+                <div>
+                    <span class="block text-xl font-bold text-[#444f22]">100</span>
+                    <span class="text-xs text-[#8b995d]"><i class="fa-regular fa-heart mr-1"></i> followers</span>
+                </div>
+                <div>
+                    <span class="block text-xl font-bold text-[#444f22]">0</span>
+                    <span class="text-xs text-[#8b995d]"><i class="fa-regular fa-comment mr-1"></i> reviews</span>
+                </div>
+            </div>
+
+            <!-- ลบกล่องเพลงออกแล้ว -> โซนปุ่มติดต่อ (Contact Zone) ปรับเป็นธีมเขียวเหลือง -->
+            <div class="aesthetic-card p-5 shadow-sm">
+                <div class="text-xs tracking-wider mb-4 text-[#8b995d] flex items-center justify-center space-x-2">
+                    <span>-</span> <i class="fa-regular fa-heart"></i> <span>contact</span> <span>-</span>
+                </div>
+                <div class="space-y-3">
+                    <a href="#" class="block w-full py-2.5 bg-[#fbfdf7] border border-[#e1e6cc] rounded-xl text-sm font-medium hover:bg-[#edf2d5] text-[#4b5823] transition shadow-sm flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-facebook text-sky-600 text-base"></i> Facebook
+                    </a>
+                    
+                </div>
+            </div>
+
+        </div>
+
+        <!-- แถบเมนูด้านล่าง (ปรับเป็นสีเขียวอ่อนพาสเทล) -->
+        <div class="absolute bottom-6 left-6 right-6 bg-[#e2e9c8] p-1.5 rounded-2xl flex shadow-inner">
+            <button class="flex-1 py-2.5 bg-white rounded-xl text-sm font-medium text-[#444f22] shadow-sm">
+                ♡ Main
+            </button>
+            <button class="flex-1 py-2.5 rounded-xl text-sm font-medium text-[#55612d]/70 hover:text-[#444f22]" onclick="alert('สลับไปหน้า Reviews')">
+                ♡ Reviews
+            </button>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
 <html lang="th">
 <head>
 <meta charset="utf-8">
@@ -54,7 +139,7 @@ input[type=file]{display:none}
 </head>
 <body>
 <main class="wrap">
-  <header class="brand"><div class="heart">♡ ✧ ♡</div><h1>Botying Payment</h1><p>ช่องทางการชำระเงิน · ขอบคุณที่สนับสนุนร้านของเรา</p></header>
+  <header class="brand"><div class="heart">♡ ✧ ♡</div><h1>Botying Payment</h1><p>ช่องทางการชำระเงิน 
   <section class="panel">
     <h2>เลขบัญชี</h2>
     <p class="sub">ชื่อบัญชี <span class="account-name">วีร์ธิดา</span> เท่านั้น</p>
@@ -70,7 +155,7 @@ input[type=file]{display:none}
       <img id="qrImage" alt="QR สำหรับชำระเงิน" hidden>
       <label class="upload" for="qrUpload">＋ เพิ่มรูป QR</label>
       <input id="qrUpload" type="file" accept="image/*">
-      <button class="save" id="saveQr">↓ บันทึกรูปเพื่อสแกน</button>
+   
     </div>
 <div class="toast" id="toast">คัดลอกแล้ว ♡</div>
 <script>
